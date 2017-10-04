@@ -1501,7 +1501,7 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
         case FSCalendarScopeMonth: {
             cell.placeholder = (cell.monthPosition == FSCalendarMonthPositionPrevious || cell.monthPosition == FSCalendarMonthPositionNext) || ![self isDateInRange:date];
             if (cell.placeholder) {
-                cell.selected &= _pagingEnabled;
+//                 cell.selected &= _pagingEnabled;
                 cell.dateIsToday &= _pagingEnabled;
             }
             break;
